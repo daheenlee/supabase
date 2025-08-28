@@ -4,7 +4,6 @@ const prompt = promptSync();
 
 const URL = "https://epwslgqtffhxtpbomocs.supabase.co";
 const KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwd3NsZ3F0ZmZoeHRwYm9tb2NzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYyOTE3NDIsImV4cCI6MjA3MTg2Nzc0Mn0.ggioxbl-aw8qJQHUQ3O2wrhw5c-l8_Mxl2lyXO15r5o";
 const supabase = createClient(URL, KEY);
 
 const menuSelect = async () => {
