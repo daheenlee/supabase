@@ -1,0 +1,28 @@
+const {createClient} = require( "@supabase/supabase-js");
+const promptSync = require("prompt-sync");
+const prompt = promptSync();
+
+const supabaseUrl = "https://epwslgqtffhxtpbomocs.supabase.co";
+const supabaseKey =
+  "process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwd3NsZ3F0ZmZoeHRwYm9tb2NzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYyOTE3NDIsImV4cCI6MjA3MTg2Nzc0Mn0.ggioxbl-aw8qJQHUQ3O2wrhw5c-l8_Mxl2lyXO15r5o";
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+
+const enroll =async() => { 
+
+    const name = id("학생 이름을 입력하세요");
+        const name  = prompt('학생 입학년도을 입력하세요');
+            const year = prompt('학생 이름을 입력하세요');
+                     const Major = prompt('학생 이름을 입력하세요');
+                const result = prompt('학생 이름을 입력하세요');
+                result= await supabase.from("university").insert({id,name,tear,major,expelled:0});
+
+        
+ };
+
+
+
+
+const { error } = await supabase
+  .from('countries')
+  .insert({ id: 1, name: 'Mordor' })
